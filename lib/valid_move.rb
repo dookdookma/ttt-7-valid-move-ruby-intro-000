@@ -2,7 +2,7 @@
 def valid_move?(board, index)
 
   valid = nil
-  if (board.between?(0, 8)) && (board[index] != " " || "" || nil)
+  if index.between?(1-9) && (board[index] != " " || "" || nil)
     valid = true
   end
 end
